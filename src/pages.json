@@ -1,15 +1,104 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [
+		{
+			"path": "pages/admin/admin",
+			"style": { 
+				"navigationBarTitleText": "审核"
+			}
+		},
 		{
 			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
+			"style": { 
+				"navigationBarTitl·eText": "预约"
 			}
-		}
+		},
+		{
+			"path": "pages/login/login",
+			"style": { 
+				"navigationBarTitl·eText": "登陆"
+			}
+		},
+		
+		
+		{
+			"path": "pages/sign/sign",
+			"style": { 
+				"navigationBarTitleText": "会议签到"
+			}
+		},
+		{
+			"path": "pages/appointment/appointment",
+			"style": { 
+				"navigationBarTitleText": "添加会议室"
+			}
+		},
+		{
+			"path": "pages/manage/manage",
+			"style": { 
+				"navigationBarTitleText": "管理"
+			}
+		},
+		{
+			"path": "pages/modify/modify",
+			"style": { 
+				"navigationBarTitleText": "编辑会议"
+			}
+		},
+		{
+			"path": "pages/authority/authority",
+			"style": { 
+				"navigationBarTitleText": "权限"
+			}
+		},
+		{
+			"path": "pages/apply/apply",
+			"style": { 
+				"navigationBarTitleText": "预约会议"
+			}
+		},
+		{
+			"path": "pages/applyer/applyer",
+			"style": { 
+				"navigationBarTitleText": "申请管理"
+			}
+		},
+		{
+			"path": "pages/detail/detail",
+			"style": { 
+				"navigationBarTitleText": "会议详情"
+			}
+		}    
 	],
+	"tabBar": {
+		"color":"#8a8a8a",
+		"selectedColor":"#d4237a",
+		"borderStyle":"black",
+		"backgroundColor":"#ffffff",
+		"list": [
+			{
+				"pagePath":"pages/admin/admin",
+				"text":"首页"
+			},
+			{
+				"pagePath":"pages/appointment/appointment",
+				"text":"添加"
+			},
+			{
+				"pagePath":"pages/manage/manage",
+				"text":"管理"
+			},
+			{
+				"pagePath":"pages/authority/authority",
+				"text":"权限"
+			}
+		]	
+	 },
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
+		"navigationBarTitleText": "会议室预约",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	}
